@@ -24,7 +24,7 @@ const Computers = ({ isMobile }: ComputersProps) => {
 	}, [rotation, updateRotation]);
 
 	return (
-		<mesh rotation={rotation}>
+		<mesh>
 			<hemisphereLight intensity={0.15} groundColor='black' />
 			<pointLight intensity={1} />
 			<spotLight
