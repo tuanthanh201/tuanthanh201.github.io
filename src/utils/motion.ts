@@ -16,7 +16,7 @@ export const textVariant = (delay: number) => {
 	};
 };
 
-type Direction = 'left' | 'right' | 'up' | 'down';
+type Direction = 'left' | 'right' | 'up' | 'down' | 'none';
 
 export const fadeIn = (
 	direction: Direction,
@@ -88,8 +88,8 @@ export const slideIn = (
 };
 
 export const staggerContainer = (
-	staggerChildren: unknown,
-	delayChildren: unknown
+	staggerChildren?: unknown,
+	delayChildren?: unknown
 ) => {
 	return {
 		hidden: {},
