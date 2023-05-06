@@ -44,7 +44,7 @@ const Ball = ({ icon }: BallProps) => {
 const BallCanvas = ({ icon }: BallProps) => {
 	return (
 		<Canvas
-			className='cursor-pointer'
+			// className='cursor-pointer'
 			frameloop='always'
 			dpr={[1, 2]}
 			gl={{
