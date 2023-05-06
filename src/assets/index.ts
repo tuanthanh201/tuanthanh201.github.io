@@ -37,6 +37,14 @@ import carrent from './carrent.png';
 import jobit from './jobit.png';
 import tripguide from './tripguide.png';
 
+import blockbreaker from './projects/blockbreaker.png';
+import blogger from './projects/blogger.jpg';
+import dino from './projects/dino.png';
+import socialite from './projects/socialite.jpg';
+import winrate from './projects/winrate.jpg';
+import portfolio from './projects/portfolio.png';
+import tomatoes from './projects/tomatoes.png';
+
 export {
 	logo,
 	backend,
@@ -73,4 +81,11 @@ export {
 	carrent,
 	jobit,
 	tripguide,
+	blockbreaker,
+	blogger,
+	dino,
+	socialite,
+	winrate,
+	portfolio,
+	tomatoes,
 };
