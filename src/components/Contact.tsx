@@ -18,6 +18,36 @@ const Contact = () => {
 
 	const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
+		setLoading(true);
+		emailjs
+			.send(
+				'service_4qfr9gq',
+				'template_bl36yvl',
+				{
+					from_name: form.name,
+					to_name: 'Thanh',
+					from_email: form.email,
+					to_email: 'ngthanh2248@gmail.com',
+					message: form.message,
+				},
+				'exCyHUCFM4Sz6mW-N'
+			)
+			.then(
+				() => {
+					setLoading(false);
+					alert('Thank you. I will get back to you as soon as possible.');
+					setForm({
+						name: '',
+						email: '',
+						message: '',
+					});
+				},
+				(error) => {
+					setLoading(false);
+					console.error(error);
+					alert('Something went wrong. Please try again later.');
+				}
+			);
 	};
 
 	const handleChange = (
@@ -25,9 +55,12 @@ const Contact = () => {
 			| React.ChangeEvent<HTMLInputElement>
 			| React.ChangeEvent<HTMLTextAreaElement>
 	) => {
-    console.log(e);
-    
-  };
+		const { name, value } = e.target;
+		setForm((prev) => ({
+			...prev,
+			[name]: value,
+		}));
+	};
 
 	return (
 		<div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
