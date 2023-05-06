@@ -13,8 +13,6 @@ import {
 	nodejs,
 	mongodb,
 	git,
-	figma,
-	docker,
 	carrent,
 	jobit,
 	tripguide,
@@ -22,6 +20,10 @@ import {
 	nokia,
 	omers,
 	singlestore,
+	graphql,
+	cPlusPlus,
+	nextjs,
+  sql,
 } from '../assets';
 
 export const navLinks = [
@@ -76,25 +78,37 @@ const technologies = [
 		icon: typescript,
 	},
 	{
+		name: 'c++',
+		icon: cPlusPlus,
+	},
+	{
 		name: 'React JS',
 		icon: reactjs,
+	},
+	{
+		name: 'Next JS',
+		icon: nextjs,
 	},
 	{
 		name: 'Redux Toolkit',
 		icon: redux,
 	},
 	{
-		name: 'Tailwind CSS',
-		icon: tailwind,
-	},
-	{
 		name: 'Node JS',
 		icon: nodejs,
+	},
+	{
+		name: 'Tailwind CSS',
+		icon: tailwind,
 	},
 	{
 		name: 'MongoDB',
 		icon: mongodb,
 	},
+  {
+    name: 'sql',
+    icon: sql
+  },
 	{
 		name: 'Three JS',
 		icon: threejs,
@@ -104,13 +118,17 @@ const technologies = [
 		icon: git,
 	},
 	{
-		name: 'figma',
-		icon: figma,
+		name: 'graphql',
+		icon: graphql,
 	},
-	{
-		name: 'docker',
-		icon: docker,
-	},
+	// {
+	// 	name: 'figma',
+	// 	icon: figma,
+	// },
+	// {
+	// 	name: 'docker',
+	// 	icon: docker,
+	// },
 ];
 
 const experiences = [
