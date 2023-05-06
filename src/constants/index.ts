@@ -1,3 +1,4 @@
+import { blockbreaker, dino, tomatoes, winrate } from '../assets';
 import {
 	mobile,
 	backend,
@@ -13,9 +14,6 @@ import {
 	nodejs,
 	mongodb,
 	git,
-	carrent,
-	jobit,
-	tripguide,
 	threejs,
 	nokia,
 	omers,
@@ -23,7 +21,9 @@ import {
 	graphql,
 	cPlusPlus,
 	nextjs,
-  sql,
+	sql,
+	blogger,
+	portfolio,
 } from '../assets';
 
 export const navLinks = [
@@ -105,10 +105,10 @@ const technologies = [
 		name: 'MongoDB',
 		icon: mongodb,
 	},
-  {
-    name: 'sql',
-    icon: sql
-  },
+	{
+		name: 'sql',
+		icon: sql,
+	},
 	{
 		name: 'Three JS',
 		icon: threejs,
@@ -195,67 +195,115 @@ const testimonials = [
 
 const projects = [
 	{
-		name: 'Car Rent',
+		name: 'Chess Pro',
 		description:
-			'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+			'A Chrome chess bot extension that runs on chess.com and lichess.org, with +14,000 users and 4/5 ratings.',
+		tags: [
+			{
+				name: 'typescript',
+				color: 'blue-text-gradient',
+			},
+		],
+		image: winrate,
+		sourceCodeLink:
+			'https://chrome.google.com/webstore/detail/chess-pro/oabpbnkggjfhodegmdoaamjfimfbomna',
+	},
+	{
+		name: 'Portfolio',
+		description: 'My previous personal website built with React and Three.js.',
 		tags: [
 			{
 				name: 'react',
 				color: 'blue-text-gradient',
+			},
+			{
+				name: 'threejs',
+				color: 'green-text-gradient',
+			},
+		],
+		image: portfolio,
+		sourceCodeLink: 'https://nextjs-rosy-phi.vercel.app/',
+	},
+	{
+		name: 'Blogger',
+		description:
+			'A blogging website where users can post their daily blogs. Markdown is supported.',
+		tags: [
+			{
+				name: 'react',
+				color: 'blue-text-gradient',
+			},
+			{
+				name: 'nodejs',
+				color: 'yellow-text-gradient',
 			},
 			{
 				name: 'mongodb',
 				color: 'green-text-gradient',
 			},
 			{
-				name: 'tailwind',
+				name: 'graphql',
 				color: 'pink-text-gradient',
 			},
+			{
+				name: 'aws',
+				color: 'orange-text-gradient',
+			},
 		],
-		image: carrent,
-		source_code_link: 'https://github.com/',
+		image: blogger,
+		sourceCodeLink: 'https://github.com/tuanthanh201/Blog',
 	},
 	{
-		name: 'Job IT',
-		description:
-			'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
+		name: 'Fresh Tomatos',
+		description: 'A movie review website built with React, Node.js, and SQL.',
 		tags: [
 			{
 				name: 'react',
 				color: 'blue-text-gradient',
 			},
 			{
-				name: 'restapi',
+				name: 'nodejs',
 				color: 'green-text-gradient',
 			},
 			{
-				name: 'scss',
+				name: 'sql',
 				color: 'pink-text-gradient',
 			},
 		],
-		image: jobit,
-		source_code_link: 'https://github.com/',
+		image: tomatoes,
+		sourceCodeLink: 'https://git.uwaterloo.ca/a368gupt1/cs348-project',
 	},
 	{
-		name: 'Trip Guide',
-		description:
-			'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+		name: 'Blockbreaker',
+		description: 'A simple game built with Unity.',
 		tags: [
 			{
-				name: 'nextjs',
+				name: 'C#',
 				color: 'blue-text-gradient',
 			},
 			{
-				name: 'supabase',
+				name: 'Unity',
 				color: 'green-text-gradient',
 			},
+		],
+		image: blockbreaker,
+		sourceCodeLink: 'https://github.com/tuanthanh201/blockbreaker',
+	},
+	{
+		name: 'Dino',
+		description: 'A simple game built with Unity.',
+		tags: [
 			{
-				name: 'css',
-				color: 'pink-text-gradient',
+				name: 'C#',
+				color: 'blue-text-gradient',
+			},
+			{
+				name: 'Unity',
+				color: 'green-text-gradient',
 			},
 		],
-		image: tripguide,
-		source_code_link: 'https://github.com/',
+		image: dino,
+		sourceCodeLink: 'https://github.com/tuanthanh201/dino',
 	},
 ];
 
