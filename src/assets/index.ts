@@ -20,6 +20,10 @@ import redux from './tech/redux.png';
 import tailwind from './tech/tailwind.png';
 import typescript from './tech/typescript.png';
 import threejs from './tech/threejs.svg';
+import graphql from './tech/graphql.png';
+import cPlusPlus from './tech/c++.png';
+import nextjs from './tech/nextjs.png';
+import sql from './tech/sql.png';
 
 import meta from './company/meta.png';
 import shopify from './company/shopify.png';
@@ -55,6 +59,10 @@ export {
 	tailwind,
 	typescript,
 	threejs,
+	graphql,
+	cPlusPlus,
+	nextjs,
+	sql,
 	meta,
 	shopify,
 	starbucks,
